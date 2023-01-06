@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}number_of_players{% endblock %} 
+{% block content %}
+<h2> Number of Human Players is {{ number_of_players }}</h2>
+<h2>Number of Starting Armies is {{ starting_armies }}</h2>
+<p> Computer start positions are: </p>
+{% for each in computer_start_position %}
+<li>
+{{ each.0 }}   {{ each.1 }}
+{% endfor %}
+</li>
+{% endblock %}  

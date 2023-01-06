@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}number_of_players{% endblock %} 
+{% block content %}
+<h1> Enter the number of players</h1>
+<form  method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}
