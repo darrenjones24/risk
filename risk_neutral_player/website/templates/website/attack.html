@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}attack{% endblock %} 
+{% block content %}
+<h1>Rebellion !!!</h1>
+<br>
+<h2> Computer Rolled {{ new_armies }} new armies </h2>
+<br><br>
+<h2> {{ new_armies }} computer armies should be placed in the continent of **{{ cont }} **  </h2>
+<br>
+<br>
+<p>The Rebellion automatically starts in the least defended country, regardless of ownership.
+    If all countries are defended equally, a manual roll of the dice determines where the Rebellion starts.
+</p> 
+<p>The Neutral Army always attacks with three dice,
+    A single Neutral Army can also initiate or continue an attack, using two dice.</p>
+
+<p>If the Neutral Army is successful in conquering the country it attacks through rebellion,
+     popular support automatically raises one army unit to guard the country while the remaining 
+     force of attackers continues to spread revolt through the continent.</p>
+    
+<p>Once the rebellion has been suppressed, the Neutral forces will automatically reinforce the first country
+    to have rebelled, with defenders equal to the number of Neutral's starting armies.
+    For example, if Neutral started with 4 armies in each country at the beginning of the game, the new "stronghold" country will also have 4 armies, and cannot have fewer than 3. If Neutral regains control of a country it originally started with, it will also reinforce it with the same bonus.
+</p>
+
+
+
+<br>
+{% endblock %}  

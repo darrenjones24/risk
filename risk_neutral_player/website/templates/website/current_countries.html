@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}current_countries{% endblock %} 
+{% block content %}
+<p> Computer Currently Owns The following: </p>
+{% for each in current_countries %}
+<li>
+{{ each }}
+</li>
+{% endfor %}
+{% endblock %}
